@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>𝐓𝐑𝐀𝐃𝐄𝐑 𝐏𝐑𝐄𝐃𝐈𝐂𝐓𝐈𝐎𝐍</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+    background: url('bg.jpg') no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.75);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.main {
+    flex: 1;
+}
+
+/* Logo */
+.logo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #00ff88;
+    outline: 2px solid red;
+    box-shadow: 0 0 20px #00ff88;
+    object-fit: cover;
+    margin-top: 40px;
+}
+
+/* Title */
+h1 {
+    font-size: 28px;
+    letter-spacing: 3px;
+    margin-top: 15px;
+}
+
+.green {
+    color: #00ff88;
+    font-weight: bold;
+}
+
+.desc {
+    color: #ccc;
+    padding: 0 20px;
+}
+
+/* Timer */
+.timer-box {
+    margin: 25px auto;
+    padding: 20px 15px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 20px;
+    
+    /* Dark glass look */
+    background: rgba(0, 0, 0, 0.6);
+    
+    /* Neon border */
+    border: 1px solid #00ff88;
+
+    /* Glow effect */
+    box-shadow: 
+        0 0 10px #00ff88,
+        inset 0 0 10px rgba(0,255,136,0.2);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Time numbers */
+.time {
+    text-align: center;
+}
+
+.time span {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    display: block;
+}
+
+/* Labels */
+.time label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #00ff88;
+}
+
+/* Colon dots */
+.dots {
+    font-size: 28px;
+    color: #00ff88;
+    font-weight: bold;
+}
+
+/* Live Users */
+.live {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #00ff88;
+}
+
+/* 🔥 NEW 3D BUTTON */
+.btn {
+    margin-top: 25px;
+    display: inline-block;
+    padding: 18px 35px;
+    background: linear-gradient(145deg, #00ff88, #00cc6a);
+    color: black;
+    border-radius: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+
+    /* 3D effect */
+    box-shadow: 
+        0 6px 0 #00994d,
+        0 10px 20px rgba(0,255,136,0.5);
+
+    transition: all 0.2s ease;
+    animation: pulse 1.5s infinite;
+}
+
+/* Telegram icon spacing */
+.tg-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 8px;
+}
+
+/* Click press effect */
+.btn:active {
+    transform: translateY(4px);
+    box-shadow: 
+        0 2px 0 #00994d,
+        0 5px 10px rgba(0,255,136,0.5);
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% { box-shadow: 0 6px 0 #00994d, 0 0 10px #00ff88; }
+    50% { box-shadow: 0 6px 0 #00994d, 0 0 25px #00ff88; }
+    100% { box-shadow: 0 6px 0 #00994d, 0 0 10px #00ff88; }
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    color: #aaa;
+    font-size: 14px;
+}
+.footer a {
+    color: #00ff88;
+    text-decoration: none;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="main">
+
+<div class="logo">
+    <img src="logo1.jpg">
+</div>
+
+<h1>𝐓𝐑𝐀𝐃𝐄𝐑 𝐏𝐑𝐄𝐃𝐈𝐂𝐓𝐈𝐎𝐍</h1>
+
+<p class="green">Recover All Your Losses</p>
+<p class="green">Get 95% Accurate Shots 🔥</p>
+
+<p class="desc">
+Join my exclusive Telegram group for premium tips, live updates & more!
+</p>
+
+<div class="timer-box">
+    <div class="time">
+        <span id="days">00</span>
+        <label>DAYS</label>
+    </div>
+
+    <div class="dots">:</div>
+
+    <div class="time">
+        <span id="hours">00</span>
+        <label>HOURS</label>
+    </div>
+
+    <div class="dots">:</div>
+
+    <div class="time">
+        <span id="minutes">05</span>
+        <label>MINUTES</label>
+    </div>
+
+    <div class="dots">:</div>
+
+    <div class="time">
+        <span id="seconds">00</span>
+        <label>SECONDS</label>
+    </div>
+</div>
+
+<p class="green">👇 Click here to join 👇</p>
+
+<!-- 🔥 UPDATED BUTTON -->
+<a href="https://t.me/traderrbhai7" class="btn">
+    
+    <svg class="tg-icon" viewBox="0 0 24 24">
+        <path fill="black" d="M9.04 15.54l-.38 5.32c.54 0 .77-.23 1.05-.5l2.52-2.41 5.22 3.82c.96.53 1.64.25 1.9-.89l3.45-16.16h.01c.31-1.45-.52-2.02-1.45-1.67L1.77 9.6c-1.39.54-1.37 1.32-.24 1.67l5.4 1.69L19.46 5.8c.59-.39 1.13-.17.69.22"/>
+    </svg>
+
+    JOIN FREE TELEGRAM
+
+    <svg class="tg-icon" viewBox="0 0 24 24">
+        <path fill="black" d="M9.04 15.54l-.38 5.32c.54 0 .77-.23 1.05-.5l2.52-2.41 5.22 3.82c.96.53 1.64.25 1.9-.89l3.45-16.16h.01c.31-1.45-.52-2.02-1.45-1.67L1.77 9.6c-1.39.54-1.37 1.32-.24 1.67l5.4 1.69L19.46 5.8c.59-.39 1.13-.17.69.22"/>
+    </svg>
+
+</a>
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    ADS MANAGED BY TG 
+    <a href="https://t.me/cvzus">@CVZUS</a>
+    <br><br>
+    COPYRIGHT © | TG @CVZUS
+</div>
+
+<script>
+// Timer
+let time = 300;
+
+let timer = setInterval(() => {
+    let days = Math.floor(time / 86400);
+    let hours = Math.floor((time % 86400) / 3600);
+    let minutes = Math.floor((time % 3600) / 60);
+    let seconds = time % 60;
+
+    document.getElementById("days").innerText = String(days).padStart(2, '0');
+    document.getElementById("hours").innerText = String(hours).padStart(2, '0');
+    document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
+    document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
+
+    if (time <= 0) {
+        clearInterval(timer);
+        window.location.href = "https://t.me/traderrbhai7";
+    }
+
+    time--;
+}, 1000);
+
+// Live Users
+setInterval(() => {
+    let users = document.getElementById("users");
+    let random = Math.floor(Math.random() * 20) - 10;
+    let current = parseInt(users.innerText);
+    users.innerText = current + random;
+}, 3000);
+</script>
+
+</body>
+</html>
